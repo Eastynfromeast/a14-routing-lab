@@ -9,10 +9,10 @@ export const Authors = [
 				title: "Harry Potter and the Philosopher's Stone",
 				urlValue: "the_Philosopher's_Stone",
 				chapters: [
-					{ id: 1, title: "Chapter I" },
-					{ id: 2, title: "Chapter II" },
-					{ id: 3, title: "Chapter III" },
-					{ id: 4, title: "Chapter IV" },
+					{ id: 1, title: "The Boy Who Lived" },
+					{ id: 2, title: "The Vanishing Glass" },
+					{ id: 3, title: "The Letters From No One" },
+					{ id: 4, title: "The Keeper of the Keys" },
 				],
 				characters: [
 					{ id: 1, name: "Harry Potter" },
@@ -26,10 +26,10 @@ export const Authors = [
 				title: "Harry Potter and the Chamber of Secrets",
 				urlValue: "the_Chamber_of_Secrets",
 				chapters: [
-					{ id: 1, title: "Chapter I" },
-					{ id: 2, title: "Chapter II" },
-					{ id: 3, title: "Chapter III" },
-					{ id: 4, title: "Chapter IV" },
+					{ id: 1, title: "The Worst Birthday" },
+					{ id: 2, title: "Dobby's Warning" },
+					{ id: 3, title: "The Burrow" },
+					{ id: 4, title: "At Flourish and Blotts" },
 				],
 				characters: [
 					{ id: 1, name: "Harry Potter" },
@@ -43,10 +43,10 @@ export const Authors = [
 				title: "Harry Potter and the Prisoner of Azkaban",
 				urlValue: "the_Prisoner_of_Azkaban",
 				chapters: [
-					{ id: 1, title: "Chapter I" },
-					{ id: 2, title: "Chapter II" },
-					{ id: 3, title: "Chapter III" },
-					{ id: 4, title: "Chapter IV" },
+					{ id: 1, title: "Owl Post" },
+					{ id: 2, title: "Aunt Marge's Big Mistake" },
+					{ id: 3, title: "The Knight Bus" },
+					{ id: 4, title: "The Leaky Cauldron" },
 				],
 				characters: [
 					{ id: 1, name: "Harry Potter" },
@@ -60,16 +60,67 @@ export const Authors = [
 				title: "Harry Potter and the Goblet of Fire",
 				urlValue: "the_Goblet_of_Fire",
 				chapters: [
-					{ id: 1, title: "Chapter I" },
-					{ id: 2, title: "Chapter II" },
-					{ id: 3, title: "Chapter III" },
-					{ id: 4, title: "Chapter IV" },
+					{ id: 1, title: "The Riddle House" },
+					{ id: 2, title: "The Scar" },
+					{ id: 3, title: "The Invitation" },
+					{ id: 4, title: "Back to the Burrow" },
 				],
 				characters: [
 					{ id: 1, name: "Harry Potter" },
 					{ id: 2, name: "Fleur Delacour" },
 					{ id: 3, name: "Viktor Krum" },
 					{ id: 4, name: "Cedric Diggory" },
+				],
+			},
+			{
+				id: 5,
+				title: "Harry Potter and the Order of the Pheonix",
+				urlValue: "the_Order_of_the_Pheonix",
+				chapters: [
+					{ id: 1, title: "Dudley Demented" },
+					{ id: 2, title: "A Peck of Owls" },
+					{ id: 3, title: "The Advanced Guard" },
+					{ id: 4, title: "Number Twelve Grimmauld Place" },
+				],
+				characters: [
+					{ id: 1, name: "Harry Potter" },
+					{ id: 2, name: "Sirius Balck" },
+					{ id: 3, name: "Bellatrix Lestrange" },
+					{ id: 4, name: "Dolores Umbridge" },
+				],
+			},
+			{
+				id: 6,
+				title: "Harry Potter and the Half-Blood Prince",
+				urlValue: "the_Half_Blood_Prince",
+				chapters: [
+					{ id: 1, title: "The Other Minister" },
+					{ id: 2, title: "Spinner's End" },
+					{ id: 3, title: "Will and Won't" },
+					{ id: 4, title: "Horace Slughorn" },
+				],
+				characters: [
+					{ id: 1, name: "Harry Potter" },
+					{ id: 2, name: "Horace Slughorn" },
+					{ id: 3, name: "Albus Dumbledore" },
+					{ id: 4, name: "Severus Snape" },
+				],
+			},
+			{
+				id: 7,
+				title: "Harry Potter and the Deathly Hollows",
+				urlValue: "the_Deathly_Hollows",
+				chapters: [
+					{ id: 1, title: "The Dark Lord Ascending" },
+					{ id: 2, title: "In Memoriam" },
+					{ id: 3, title: "The Dursleys Departing" },
+					{ id: 4, title: "The Seven Potters" },
+				],
+				characters: [
+					{ id: 1, name: "Harry Potter" },
+					{ id: 2, name: "Lord Voldemort" },
+					{ id: 3, name: "Dobby the loyal elf" },
+					{ id: 4, name: "Fred Weasely" },
 				],
 			},
 		],
@@ -81,7 +132,7 @@ export const Authors = [
 		books: [
 			{
 				id: 1,
-				title: "The Fellowship of the Ring",
+				title: "LOTR - The Fellowship of the Ring",
 				urlValue: "The_Fellowship_of_the_Ring",
 				chapters: [
 					{ id: 1, title: "Chapter I" },
@@ -99,7 +150,7 @@ export const Authors = [
 			},
 			{
 				id: 2,
-				title: "The Two Towers",
+				title: "LOTR - The Two Towers",
 				urlValue: "The_Two_Towers",
 				chapters: [
 					{ id: 1, title: "Chapter I" },
@@ -117,7 +168,7 @@ export const Authors = [
 			},
 			{
 				id: 3,
-				title: "The Return of the King",
+				title: "LOTR - The Return of the King",
 				urlValue: "The_Return_of_the+King",
 				chapters: [
 					{ id: 1, title: "Chapter I" },
