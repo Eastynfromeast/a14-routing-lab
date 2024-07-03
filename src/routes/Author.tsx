@@ -1,4 +1,4 @@
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation, useParams, Outlet } from "react-router-dom";
 import { Authors } from "../db";
 
 function Author() {
@@ -15,6 +15,7 @@ function Author() {
 					</li>
 				))}
 			</ul>
+			<Outlet />
 		</>
 	);
 }
