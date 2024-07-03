@@ -3,10 +3,10 @@ import App from "./App";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Error from "./routes/Error";
-import Author from "./routes/Author";
-import Book from "./routes/book/Book";
-import Chapters from "./routes/book/Chapters";
-import Characters from "./routes/book/Characters";
+import Author from "./routes/Author/Author";
+import Book from "./routes/Author/book/Book";
+import Chapters from "./routes/Author/book/Chapters";
+import Characters from "./routes/Author/book/Characters";
 
 const router = createBrowserRouter([
 	{

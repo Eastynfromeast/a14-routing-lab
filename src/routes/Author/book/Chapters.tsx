@@ -1,11 +1,9 @@
-import { useLocation } from "react-router-dom";
-import { Authors } from "../../db";
+import { useParams } from "react-router-dom";
+import { Authors } from "../../../db";
+import ListItem from "../../../components/ListItem";
 
 function Chapters() {
-	const {
-		state: { authorId, bookId },
-	} = useLocation();
-
+	const { authorId, bookId } = useParams();
 	const foundAuthor = Authors.find(author => author.urlValue === authorId);
 	const foundBook = foundAuthor?.books.find(book => book.urlValue === bookId);
 
@@ -14,7 +12,7 @@ function Chapters() {
 			<h3>Chapters</h3>
 			<ul>
 				{foundBook?.chapters.map(chapter => (
-					<li key={`chapter${chapter.id}`}>{chapter.title}</li>
+					<ListItem key={`chapter${chapter.id}`} text={chapter.title} />
 				))}
 			</ul>
 		</>

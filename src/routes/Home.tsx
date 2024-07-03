@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Authors } from "../db";
-import { Link } from "react-router-dom";
+
+import LinkListItem from "../components/LinkListItem";
 
 interface IAuthors {
 	id: number;
@@ -19,9 +20,7 @@ function Home() {
 			<h1>Authors of Best Selling Novels</h1>
 			<ul>
 				{authors?.map(author => (
-					<li key={author.id}>
-						<Link to={`/author/${author.urlValue}`}>{author.name}</Link>
-					</li>
+					<LinkListItem key={author.id} link={`/author/${author.urlValue}`} text={author.name} />
 				))}
 			</ul>
 		</div>

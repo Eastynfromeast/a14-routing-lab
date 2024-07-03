@@ -1,5 +1,6 @@
-import { Link, Outlet, useParams } from "react-router-dom";
-import { Authors } from "../../db";
+import { Outlet, useParams } from "react-router-dom";
+import { Authors } from "../../../db";
+import LinkListItem from "../../../components/LinkListItem";
 
 function Book() {
 	const { authorId, bookId } = useParams();
@@ -11,16 +12,8 @@ function Book() {
 		<>
 			<h2>{foundBook?.title}</h2>
 			<ul>
-				<li>
-					<Link to={"chapters"} state={{ authorId, bookId }}>
-						Chapters
-					</Link>
-				</li>
-				<li>
-					<Link to={"characters"} state={{ authorId: authorId, bookId: bookId }}>
-						Characters
-					</Link>
-				</li>
+				<LinkListItem link={"chapters"} text="Chapters" />
+				<LinkListItem link={"characters"} text="Characters" />
 			</ul>
 			<Outlet />
 		</>

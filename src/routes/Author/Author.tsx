@@ -1,5 +1,6 @@
-import { Link, useLocation, useParams, Outlet } from "react-router-dom";
-import { Authors } from "../db";
+import { useParams, Outlet } from "react-router-dom";
+import { Authors } from "../../db";
+import LinkListItem from "../../components/LinkListItem";
 
 function Author() {
 	const { authorId } = useParams();
@@ -10,9 +11,7 @@ function Author() {
 			<h1>{foundAuthor?.name}</h1>
 			<ul>
 				{foundAuthor?.books.map(book => (
-					<li key={book.id}>
-						<Link to={`/author/${authorId}/${book.urlValue}`}>{book.title}</Link>
-					</li>
+					<LinkListItem key={book.id} link={`/author/${authorId}/${book.urlValue}`} text={book.title} />
 				))}
 			</ul>
 			<Outlet />
